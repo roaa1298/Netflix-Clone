@@ -8,8 +8,8 @@ function MovieList(){
 
     const getAllMovies = async () => {
         try {
-            const res= await axios.get(`https://api.themoviedb.org/3/trending/all/week?api_key=b9aff9f95537f4e2ba6688719f5c1bef&language=en-US`)
-            setData(res.data.results);
+            const res= await axios.get(`https://movie-roaa.herokuapp.com/trending`)
+            setData(res.data);
         } catch (error) {
             
         }
